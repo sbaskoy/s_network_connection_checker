@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:s_network_connection_checker/models/ip_model.dart';
 import 'package:s_network_connection_checker/s_checker.dart';
 import 'package:s_network_connection_checker/s_checker_widget.dart';
 
 void main() async {
   var hasConnection = await SNetworkConnectionChecker.instance.hasConnection();
+  SNetworkConnectionChecker.instance.selectedIp.setState(SIpModel("Google 1", "8.8.8.8", 53));
+  SNetworkConnectionChecker.instance.setConfig(
+    failedPingCount: 2,
+    pingTimeout: const Duration(seconds: 2),
+    reTryDuration: const Duration(seconds: 3),
+    urls: [
+      SIpModel("Google 1", "8.8.8.8", 53),
+      SIpModel("Google 2", "8.8.4.4", 53),
+    ],
+  );
 
   print("Has connection $hasConnection");
   runApp(const FullScreenWarningWithOpacity());

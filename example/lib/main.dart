@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:s_network_connection_checker/models/ip_model.dart';
-import 'package:s_network_connection_checker/s_checker.dart';
-import 'package:s_network_connection_checker/s_checker_widget.dart';
+import 'package:s_network_connection_checker/s_network_connection_checker.dart';
+
 
 void main() async {
   var hasConnection = await SNetworkConnectionChecker.instance.hasConnection();

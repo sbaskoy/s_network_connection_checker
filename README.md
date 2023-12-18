@@ -21,7 +21,7 @@ and the Flutter guide for
 
 |                                                                                                           |     |
 | :-------------------------------------------------------------------------------------------------------: | :-: |
-| ![poc](https://github.com/sbaskoy/s_network_connection_checker/blob/main/images/full_screen.png?raw=true) |     |
+| ![poc](https://github.com/sbaskoy/s_network_connection_checker/blob/main/images/full_screen.gif?raw=true) |     |
 
 ### Configs
 

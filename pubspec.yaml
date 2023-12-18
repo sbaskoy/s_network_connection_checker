@@ -1,11 +1,11 @@
 name: s_network_connection_checker
 description: "Check if you are connected to the internet."
-version: 0.0.1
+version: 0.0.1+1
 homepage: https://github.com/sbaskoy/s_network_connection_checker
 repository: "https://github.com/sbaskoy/s_network_connection_checker"
 
-author: "Salim Baskoy"
-publish_to: none
+
+
 
 topics:
   - network
